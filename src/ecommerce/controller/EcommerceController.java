@@ -21,8 +21,8 @@ public class EcommerceController implements EcommerceRepository {
 	}
 	@Override
 	public void listarTodas() {
-		for (var artes : listaArte) {
-        	artes.visualizar();
+		for (var arte : listaArte) {
+        	arte.visualizar();
         }
 		
 	}

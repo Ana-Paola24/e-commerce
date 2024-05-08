@@ -3,12 +3,16 @@ package ecommerce.model;
 public class arteFisica extends Arte{
 
 	private int quantidade;
+	private String tamanho;
 	
 	
+
+
 	public arteFisica(int numero, String nome, String artista, String dataCriacao, int tipo, float preco,
-			int quantidade) {
+			int quantidade, String tamanho) {
 		super(numero, nome, artista, dataCriacao, tipo, preco);
 		this.quantidade = quantidade;
+		this.tamanho = tamanho;
 	}
 
 
@@ -19,6 +23,16 @@ public class arteFisica extends Arte{
 
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
+	}
+
+
+	public String getTamanho() {
+		return tamanho;
+	}
+
+
+	public void setTamanho(String tamanho) {
+		this.tamanho = tamanho;
 	}
 
 
@@ -38,6 +52,7 @@ public class arteFisica extends Arte{
 	public void visualizar() {
 		super.visualizar();
 		System.out.println("Quantidade: " + this.quantidade);
+		System.out.println("Tamanho: " + this.tamanho);
 	}
 		
 	}
