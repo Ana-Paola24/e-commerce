@@ -7,30 +7,32 @@ public class arteDigital extends Arte {
 
 	
 	
-	public arteDigital(String nome, String artista, String dataCriacao, int tipo, float preco, String tamanho,
-			String tempo) {
-		super(nome, artista, dataCriacao, tipo, preco);
+	
+
+    public arteDigital(int numero, String nome, String artista, String dataCriacao, int tipo, float preco,
+			String tamanho, String tempo) {
+		super(numero, nome, artista, dataCriacao, tipo, preco);
 		this.tamanho = tamanho;
 		this.tempo = tempo;
 	}
 
-   public String getTamanho() {
+	public String getTamanho() {
 		return tamanho;
 	}
 
-    public void setTamanho(String tamanho) {
+	public void setTamanho(String tamanho) {
 		this.tamanho = tamanho;
 	}
 
-    public String getTempo() {
+	public String getTempo() {
 		return tempo;
 	}
 
-    public void setTempo(String tempo) {
+	public void setTempo(String tempo) {
 		this.tempo = tempo;
 	}
 
-    @Override
+	@Override
 	public void visualizar() {
 		super.visualizar();
 		System.out.println("Tamanho: " + this.tamanho);
@@ -38,7 +40,8 @@ public class arteDigital extends Arte {
 	}
 
 	@Override
-	public void venda(int venda) {
+	public boolean venda(int venda) {
+		return true;
 		}
 
 }

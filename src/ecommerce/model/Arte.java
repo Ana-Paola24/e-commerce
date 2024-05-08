@@ -4,20 +4,32 @@ package ecommerce.model;
 
 public abstract class Arte {
 	
+	private int numero;
 	private String nome;
 	private String artista;
 	private String dataCriacao;
 	private int tipo;
 	private float preco;
 	
-	public Arte(String nome, String artista, String dataCriacao, int tipo, float preco) {
-		
+	
+
+public Arte(int numero, String nome, String artista, String dataCriacao, int tipo, float preco) {
+		super();
+		this.numero = numero;
 		this.nome = nome;
 		this.artista = artista;
 		this.dataCriacao = dataCriacao;
 		this.tipo = tipo;
 		this.preco = preco;
 	}
+
+public int getNumero() {
+	return numero;
+}
+
+public void setNumero(int numero) {
+	this.numero = numero;
+}
 
 public String getNome() {
 	return nome;
@@ -59,7 +71,7 @@ public void setPreco(float preco) {
 	this.preco = preco;
 }
 
-public abstract void venda(int venda);
+public abstract boolean venda(int venda);
 
 public void visualizar() {
 	

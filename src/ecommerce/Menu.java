@@ -19,10 +19,10 @@ public class Menu {
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
 			System.out.println("            1 - Cadastras Produto                    ");
-			System.out.println("            2 - Buscar por Produto                   ");
+			System.out.println("            2 - Buscar Arte por ID                   ");
 			System.out.println("            3 - Atualizar Produto                    ");
-			System.out.println("            4 - Listar todos os Produtos             ");
-			System.out.println("            5 - Deletar Produto                      ");
+			System.out.println("            4 - Listar todos as Obras                ");
+			System.out.println("            5 - Excluir do Catálogo                  ");
 			System.out.println("            6 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
@@ -38,8 +38,8 @@ public class Menu {
 				opcao = 0;
 			}
 		
-			if (opcao == 9) {
-				System.out.println("\n\nBanco do Brasil com Z - O seu Futuro começa aqui!");
+			if (opcao == 6) {
+				System.out.println("\n\nSua Arte Favorita - Onde a imaginação nasce e se realiza!*");
 				sobre();
 				leia.close();
 				System.exit(0);
