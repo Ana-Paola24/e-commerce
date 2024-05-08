@@ -14,17 +14,16 @@ public class Menu {
 		while (true) {
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("                  Sua Loja Favorita                  ");
+			System.out.println("                  Sua Arte Favorita                  ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("            1 - Cadastro de Cliente                  ");
-			System.out.println("            2 - Atualizar Dados da Conta Cliente     ");
-			System.out.println("            3 - Cadastras Produto                    ");
-			System.out.println("            4 - Buscar por Produto                   ");
-			System.out.println("            5 - Listar todos os Produtos             ");
-			System.out.println("            6 - Deletar Produto                      ");
-			System.out.println("            7 - Sair                                 ");
+			System.out.println("            1 - Cadastras Produto                    ");
+			System.out.println("            2 - Buscar por Produto                   ");
+			System.out.println("            3 - Atualizar Produto                    ");
+			System.out.println("            4 - Listar todos os Produtos             ");
+			System.out.println("            5 - Deletar Produto                      ");
+			System.out.println("            6 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("Entre com a opção desejada:                          ");
@@ -34,7 +33,7 @@ public class Menu {
 			try {
 				opcao = leia.nextInt();
 			} catch (InputMismatchException e) {
-				System.out.println("\nDigite valores inteiros!");
+				System.out.println("\nDigite uma opção válida!");
 				leia.nextLine();
 				opcao = 0;
 			}
@@ -79,18 +78,6 @@ public class Menu {
 				keyPress();
 				break;
 
-			case 7:
-				System.out.println("Depósito\n\n");
-				
-				keyPress();
-				break;
-
-			case 8:
-				System.out.println("Transferência entre Contas\n\n");
-				
-				keyPress();
-				break;
-
 			default:
 				System.out.println("\nOpção Inválida\n");
 				keyPress();
@@ -106,7 +93,7 @@ public class Menu {
 		System.out.println("""
 				\n*********************************************
 
-				Projeto Ecommerce Loja Favorita desenvolvido por:
+				Projeto Ecommerce Sua Arte Favorita desenvolvido por:
 
 				Ana Paola - Generation - Java 74
 				github.com/conteudoGeneration
